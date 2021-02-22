@@ -1,4 +1,4 @@
-# Text Comparison, Classification and Analysis:
+## Text Comparison, Classification and Analysis:
 ### How language in subreddits can be identified, classified and used to predict market trends.
 
 ## Executive Summary
@@ -38,7 +38,7 @@ While it is unsurprising that words like tfsa and ei are important words, it is 
  
  WallStreetBets is not moderated for crass language, and it is known to have derogatory language in it's posts. The model, however, can pick up on the frequency of derogatory language used in one subreddit, and the lack of derogatory language in another. 
 
-#### Ongoing predictions
+### Ongoing predictions
 
 The model was trained on data scraped on Saturday, January 23rd, 2021, when the Gamestop share price closed at $65.01 the day before. To test the model's generalization, I generated predictions from data scraped on January 27th (when share prices hit a high of $380.00), and again a month later on February 22nd (with share prices reaching a high of $48). 
 
@@ -46,10 +46,11 @@ The model was trained on data scraped on Saturday, January 23rd, 2021, when the 
 
 In both cases, the model over-predicted the number of positive classes, with January's predictions scoring higher than February's. The recall score, which measures the percentage of correct predictions of the positive class is high in both datasets. Similarly, the precision score, which measures correct positive predictions out of all predictions is higher than the recall score, indicating more positive classes were correctly identified than negative classes.
 
-The ROC score was also calculated for both datasets. <img src='/Images and Supporting Documents/ROC curve jan-feb.png'/>
+The ROC score was also calculated for both datasets, which also indicates that model accuracy decreased in February. <img src='/Images and Supporting Documents/ROC curve jan-feb.png'/>
 
 
-#### Final Thoughts
+### Final Thoughts
 
-This project is intended to be an initial exploration into leveraging data available on Reddit to develop classification algorithms. There could be potential to develop this idea further by scraping more data before the Gamestop mania and establishing a more generalizable predictive model. Given the feature importances calculated for the logistic regression model developed on a small sample of data, it is clear that while the model performs well during height of Gamestop, the features used to train the model may not be the best for a long-term predictive model.  
+This project is intended to be an initial exploration into leveraging data available on Reddit to develop classification algorithms. There could be potential to develop this idea further by scraping more data before the Gamestop mania and establishing a more generalizable predictive model. Given the feature importance calculated for the logistic regression model developed on a small sample of data, it is clear that while the model performs well during height of Gamestop, the features used to train the model may not be the best for a long-term predictive model.
 
+I will continue to scrape data from the two subreddits to analyse changes in language and important features as the Gamestop conversation continues. Ultimately, changes in model performance could be indicative of new conversation topics in either thread, predictions regarding Gamestop mania, and ultimately insight into the future of market manipulation by individual traders on a public forum. 
