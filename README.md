@@ -14,7 +14,7 @@ To gain some insight into why WallStreetBets was the subreddit of choice for Gam
 Subreddit text was scraped using the [Pushshift API](https://pushshift.io/api-parameters/) on January 23rd, 2021. The text was preproccessed using scikit-learn's various vecotizers, and used to test a variety of classification algorithms.
 <img src = 'Images and Supporting Documents/model accuracy graph.png'/>
 
-Using a training and testing split, we evaluated each model by measuring the accuracy, precision and recall scores, as well as the receiver operating area under the curve. <img src='Images and Supporting Documents/ROC curve.png'\>
+Using a training and testing split, we evaluated each model by measuring the accuracy, precision and recall scores, as well as the receiver operating area under the curve. <img src='https://github.com/matheastevens/Subreddit-Classification-using-NLP/blob/main/Images%20and%20Supporting%20Documents/ROC%20curve.png'\>
 
 
 
