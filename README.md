@@ -27,9 +27,11 @@ Some of the biggest findings include:
 The word gme has the highest permutation importance score with the logistic regression model. This defining feature raises some flags regarding the model's ability to classify posts beyond the Gamestop mania. While it may be a strong indication of subreddit+ origin now, it may no longer be present in either subreddit in the future, limiting our model's long-term performance and generalization power.  
  
  - Canadian and American-specific investment terms are important features. 
+ 
 Canadian-specific investment terms like tfsa and ei came up in the feature permutation calculations. Because Canadian Personal Investor subreddit is, afterall, dedicated to the personal wealth of Canadians, it is unsurprising that these words are indicative of which class a post comes from.
 
  - Industry terminology as important features.
+
 While it is unsurprising that words like tfsa and ei are important words, it is interesting that industry terminology is also picked up as important words. Words like currency, immigration and oil have a degree of importance on model accuracy have a measurable effect on the model's accuracy. Even basic domain knowledge would understand that the price of oil, immigration policies and currency valuations impact markets around the world. Further exporation into why these are therefore distinguishing words between subreddits could provide insight into cultural interpreations of market forces.  
 
  - Derogatory language as one of the feature words leverage by the model to classify posts.
