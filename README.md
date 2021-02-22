@@ -12,9 +12,9 @@ To gain some insight into why WallStreetBets was the subreddit of choice for Gam
 #### Initial model building and results
 
 Subreddit text was scraped using the [Pushshift API](https://pushshift.io/api-parameters/) on January 23rd, 2021. The text was preproccessed using scikit-learn's various vecotizers, and used to test a variety of classification algorithms.
-<img src = 'Images and Supporting Documents/model results'/>
+<img src = 'Images and Supporting Documents/model accuracy graph.png'/>
 
-Using a training and testing split, we evaluated each model by measuring the accuracy, precision and recall scores, as well as the receiver operating area under the curve. <img src='Images and Supporting Documents/ROC curve.png' style='float:right'\>
+Using a training and testing split, we evaluated each model by measuring the accuracy, precision and recall scores, as well as the receiver operating area under the curve. <img src='Images and Supporting Documents/ROC curve.png'\>
 
 
 
