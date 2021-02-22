@@ -14,7 +14,7 @@ To gain some insight into why Wallstreetbets was the subreddit of choice for Gam
 Subreddit text was scraped using the [Pushshift API](https://pushshift.io/api-parameters/) on January 23rd, 2021. The text was preprocessed using scikit-learn's various vectorizers, and used to test a variety of classification algorithms.
 <img src = '/Images and Supporting Documents/model accuracy graph.png'/>
 
-Using a training and testing split, we evaluated each model by measuring the accuracy, precision and recall scores, as well as the receiver operating area under the curve. <img src='/Images and Supporting Documents/ROC curve.png' style='float:right'\>
+Using a training and testing split, we evaluated each model by measuring the accuracy, precision and recall scores, as well as the receiver operating area under the curve. <img src='/Images and Supporting Documents/ROC curve.png' style='float: right'/>
 
 
 #### Feature Importance
@@ -42,9 +42,11 @@ While it is unsurprising that words like tfsa and ei are important words, it is 
 
 The model was trained on data scraped on Saturday, January 23rd, 2021, when the Gamestop share price closed at $65.01 the day before. To test the model's generalization, I generated predictions from data scraped on January 27th (when share prices hit a high of $380.00), and again a month later on February 22nd (with share prices reaching a high of $48). 
 
-As expected, the model did not perform as well on data from later in January or February. <img src='/Images and Supporting Documents/ROC curve.png' style="float: right; width: 100px;"/>
+<img src='/Images and Supporting Documents/Jan and Feb predictions.png' style="float: right; width: 100px;"/>
 
-In both cases, the model significantly over-predicted the number of positive classes
+In both cases, the model over-predicted the number of positive classes, with January's predictions scoring higher than February's. The recall score, which measures the percentage of correct predictions of the positive class is high in both datasets. Similarly, the precision score, which measures correct positive predictions out of all predictions is higher than the recall score, indicating more positive classes were correctly identified than negative classes.
+
+The ROC score was also calculated for both datasets. <img src='/Images and Supporting Documents/ROC curve jan-feb.png'/>
 
 
 #### Final Thoughts
